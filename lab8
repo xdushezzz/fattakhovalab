@@ -9,28 +9,35 @@
 5. Дано трехзначное число. В нем зачеркнули первую слева цифру и приписали ее справа. Вывести полученное число.
 '''
 print('Задача 1')
+print('Введите размер файла в байтах')
 a = int(input())
 b = int(a/1024)
 print(b)
 print('Задача 2')
+print('Введите А')
 a = int(input())
+print('Введите В')
 b = int(input())
 if a > b:
     c = int(a/b)
     print(c)
 print('Задача 3')
+print('Введите А')
 a = int(input())
+print('Введите В')
 b = int(input())
 if a > b:
     c = int(a/b)
     k = a - b*c
     print(k)
 print('Задача 4')
+print("Введите двухзначное число")
 a = int(input())
 b = a//10
 c = (a%10)*10
 print(b+c)
 print('Задача 5')
+print('Введите трехзначное число')
 a = int(input())
 b = a//100
 c = ((a//10)%10)*100
