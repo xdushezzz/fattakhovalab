@@ -10,7 +10,9 @@
 A1·x + B1·y = C1,
 A2·x + B2·y = C2,
 '''
+
 print('Задача 1:')
+print('Введите значение угла в градусах')
 a = int(input())
 if 0 < a < 360:
     pi = 3.14
@@ -18,6 +20,7 @@ if 0 < a < 360:
     print(rad)
 
 print('Задача 2:')
+print('Введите значение угла в радианах')
 a = float(input())
 pi = 3.14
 if 0 < a < 2*pi:
@@ -48,20 +51,30 @@ ans = s + v1*t + v2*t
 print(ans)
 
 print('Задача 5:')
+print('Введите число А:')
 a = int(input())
+print('Введите число В:')
 b = int(input())
 if a!=0:
     x = -b / a
-print(x)
+print('x=',x)
 
-print('Задача 1:')
+print('Задача 6:')
+print('Введите число А1:')
 A1 = int(input())
+print('Введите число А2:')
 A2 = int(input())
+print('Введите число В1:')
 B1 = int(input())
+print('Введите число В2:')
 B2 = int(input())
+print('Введите число С1:')
 C1 = int(input())
+print('Введите число С2:')
 C2 = int(input())
 D = A1 * B2 - A2 * B1
 x = (C1 * B2 - C2 * B1) / D
 y = (A1 * C2 - A2 * C1) / D
-print(x, y)
+if x == -0: x = 0
+if y == -0: y = 0
+print('x =', x,'y =', y)
