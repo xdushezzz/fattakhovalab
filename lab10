@@ -72,7 +72,7 @@ print('Введите сторону В')
 b = int(input())
 print('Введите сторону С')
 c = int(input())
-if (a < (b + c)) or (b < (a + c)) or (c < (a + b)):
+if (a < (b + c)) and (b < (a + c)) and (c < (a + b)):
     print("Существует треугольник со сторонами a, b, c")
 else:
     print("Не существует треугольник со сторонами a, b, c")
