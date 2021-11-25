@@ -13,15 +13,23 @@
 «нечетное трехзначное число» и т. д.
 '''
 print("Задание 1")
+print('Введите А')
 A = int(input())
+print('Введите В')
 B = int(input())
 if A != B:
     A = max(A, B)
     B = max(A, B)
+if A == B:
+    A = 0
+    B = 0
 print(A, B)
 print("Задание 2")
+print('Введите А')
 a = int(input())
+print('Введите В')
 b = int(input())
+print('Введите С')
 c = int(input())
 mas = []
 mas.append(a)
@@ -32,8 +40,11 @@ mas.remove(max(mas))
 ans = max(mas)+k
 print(ans)
 print("Задание 3")
+print('Введите А')
 A = int(input())
+print('Введите В')
 B = int(input())
+print('Введите С')
 C = int(input())
 ans1 = abs(B-A)
 ans2 = abs(C-A)
@@ -55,6 +66,7 @@ if (x < 0 and y < 0):
 if (x < 0 and y > 0):
     print("IV четверть")
 print("Задание 5")
+print('Введите число')
 a = int(input())
 if a == 0:
     print("нулевое число")
@@ -67,6 +79,7 @@ if a > 0 and a%2 == 0:
 if a > 0 and a%2 != 0:
     print("положительное нечетное число")
 print("Задание 6")
+print('Введите целое число, лежащее в диапазоне 1–999')
 a = int(input())
 if a < 10 and a%2 == 0:
     print("четное однозначное число")
