@@ -14,10 +14,12 @@ K-го дня года, если известно, что в этом году 1
  что, к примеру, началом 20 столетия был 1901 год
 '''
 print("Задание 1")
+print('Введите количество секунд')
 N = int(input())
 ans = N%60
 print(ans)
 print("Задание 2")
+print('Введите целое число K, лежащее в диапазоне 1–365')
 k = int(input())
 ans = k%7
 if ans == 1:
@@ -43,14 +45,18 @@ if n <=7:
     ans = (n+k-1)%7
     print(ans)
 print("Задание 4")
+print('Введите А')
 a = int(input())
+print('Введите В')
 b = int(input())
+print('Введите С')
 c = int(input())
 A = int(a/c)
 B = int(b/c)
 ans = a*b - A*B*c*c
 print(ans)
 print("Задание 5")
+print('Введите год')
 a = int(input())
 ans = int((a - 1)/100)+1
 print(ans, "век")
