@@ -54,7 +54,7 @@ c = int(input())
 A = int(a/c)
 B = int(b/c)
 ans = a*b - A*B*c*c
-print(A*B, ans)
+print('Количество квадратов:', A*B,'площадь незанятой части прямоугольника:', ans)
 print("Задание 5")
 print('Введите год')
 a = int(input())
