@@ -42,7 +42,7 @@ k = int(input())
 print("Введите какой номер недели был 1-го января")
 n = int(input())
 if n <=7:
-    ans = (n+k-1)%7
+    ans = ((n+k-2)%7)+1
     print(ans)
 print("Задание 4")
 print('Введите А')
