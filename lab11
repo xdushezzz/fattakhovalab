@@ -17,12 +17,12 @@ print('Введите А')
 A = int(input())
 print('Введите В')
 B = int(input())
-if A != B:
-    A = max(A, B)
-    B = max(A, B)
 if A == B:
     A = 0
     B = 0
+if A != B:
+    A = max(A, B)
+    B = max(A, B)
 print(A, B)
 print("Задание 2")
 print('Введите А')
@@ -40,18 +40,20 @@ mas.remove(max(mas))
 ans = max(mas)+k
 print(ans)
 print("Задание 3")
-print('Введите А')
-A = int(input())
-print('Введите В')
-B = int(input())
-print('Введите С')
-C = int(input())
-ans1 = abs(B-A)
-ans2 = abs(C-A)
-if ans1 < ans2:
-    print(B, ans1)
-if ans2 < ans1:
-    print(C, ans2)
+
+a = tuple(map(float, input("A(x, y) = ").split()))
+b = tuple(map(float, input("B(x, y) = ").split()))
+c = tuple(map(float, input("C(x, y) = ").split()))
+
+ab = ((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2) ** (1 / 2)
+ac = ((c[0] - a[0]) ** 2 + (c[1] - a[1]) ** 2) ** (1 / 2)
+
+if ab < ac:
+    print(f"Точка В ближе к А. Расстояние равно {ab:.2f}")
+if ab > ac:
+    print(f"Точка C ближе к А. Расстояние равно {ac:.2f}")
+if ab == ac:
+    print(f"Точки B и С равноудалены от точки A")
 print("Задание 4")
 print("Введите Х")
 x = int(input())
